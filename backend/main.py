@@ -58,6 +58,11 @@ def screenshot_timer_worker():
     while screenshot_timer_running:
         config = config_service.get_config()
         if config.screenshot_interval > 0:
+            # 每次循环重新加载最新的选区配置，避免使用旧数据
+            try:
+                region_service.load_regions()
+            except Exception as e:
+                print(f"[定时截图] 重新加载选区失败: {e}")
             regions = region_service.get_all_regions()
             for region in regions:
                 screenshot_service.capture_and_save_region(region)
