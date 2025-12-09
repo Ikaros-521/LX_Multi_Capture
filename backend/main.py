@@ -134,6 +134,12 @@ def on_hotkey_c():
     print("\n" + "=" * 60)
     print("[热键C] ========== 触发！执行截图 ==========")
     try:
+        # 每次热键触发时重新加载选区，确保使用最新配置
+        try:
+            region_service.load_regions()
+        except Exception as e:
+            print(f"[热键C] ⚠ 重新加载选区失败: {e}")
+
         regions = region_service.get_all_regions()
         if not regions:
             print("[热键C] ⚠ 警告: 没有可用的选区")
@@ -197,6 +203,11 @@ async def startup_event():
     try:
         setup_hotkeys()
         print("热键注册成功")
+
+        # 自动打开浏览器 访问 http://localhost:8021
+        import webbrowser
+        webbrowser.open('http://localhost:8021')
+        print("浏览器已自动打开")
     except Exception as e:
         print(f"热键注册失败: {e}")
 
