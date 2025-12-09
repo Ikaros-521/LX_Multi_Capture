@@ -1,0 +1,93 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "D:/Github_Pro/LX_Multi_Capture/backend/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": true
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "D:/Github_Pro/LX_Multi_Capture/ui/logo.ico"
+  },
+  {
+   "optionDest": "name",
+   "value": "\u6d1b\u66e6-\u591a\u9009\u533a\u622a\u56fe\u5668-\u670d\u52a1\u7aef"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "keyboard"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "pynput"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "mss"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "pyautogui"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "pywin32"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "Pillow"
+  },
+  {
+   "optionDest": "datas",
+   "value": "D:/Github_Pro/LX_Multi_Capture/frontend/dist;frontend/dist/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
